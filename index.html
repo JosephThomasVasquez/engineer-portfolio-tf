@@ -4,6 +4,7 @@
     <meta charset="UTF-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <!-- imported normalize.css to help with consistency across all browsers -->
     <link
       rel="stylesheet"
       href="https://cdnjs.cloudflare.com/ajax/libs/normalize/8.0.1/normalize.min.css"
@@ -11,22 +12,28 @@
       crossorigin="anonymous"
       referrerpolicy="no-referrer"
     />
+    <!-- custom stylesheet linked -->
     <link rel="stylesheet" href="style.css" type="text/css" />
 
-    <title>Software Engineer</title>
+    <!-- Custom title -->
+    <title>Joseph Vasquez - Software Engineer</title>
   </head>
+
   <body>
-    <!-- HEADER - Brand Name & Navbar with nav links -->
+    <!-- HEADER -->
     <header>
       <div class="header-wrapper">
+        <!-- div containing main header as h1 and p as the subtext -->
         <div class="home">
           <h1>Joseph Vasquez</h1>
           <p>Software Engineer</p>
         </div>
 
+        <!-- main nav bar -->
         <nav>
           <ul>
-            <li><a href="/" class="nav-link">Home</a></li>
+            <!-- all list items have links referencing to a section designated by an id selector for each section -->
+            <li><a href="#home" class="nav-link">Home</a></li>
             <li><a href="#about" class="nav-link">About</a></li>
             <li><a href="#contact" class="nav-link">Contact</a></li>
           </ul>
@@ -37,12 +44,13 @@
     <!-- MAIN CONTENT - Start of Main container containing article and multiple sections -->
     <main>
       <div class="content-wrapper">
+        <!-- article that contains all matching content related for SEO -->
         <article>
           <!-- INTRO Section -->
           <section id="about">
-            F
             <!-- p-wrapper container to keep multiple elements consistent instead of creating/duplicating css classes -->
             <div class="p-wrapper">
+              <!-- Profile Photo -->
               <div class="photo">
                 <img
                   src="./images/kobu-agency-67L18R4tW_w-unsplash.jpg"
@@ -50,11 +58,18 @@
                 />
               </div>
 
+              <!-- 2nd header for new section -->
               <h2>👋 Hi, i'm Joseph Vasquez</h2>
+
+              <!-- subtext supporting h2 header -->
               <p class="sub-text">
                 I'm a Software Engineer based in San Francisco, CA.
               </p>
+
+              <!-- h3 for a smaller header section than h2 -->
               <h3>These are my most passionate interests:</h3>
+
+              <!-- Unordered list with list items of my interests -->
               <ul>
                 <li>Making interactive, fun and easy to use software.</li>
                 <li>
@@ -73,7 +88,10 @@
           <!-- ABOUT ME Section -->
           <section id="about">
             <div class="p-wrapper">
+              <!-- h2 again to start next section -->
               <h2>About Me</h2>
+
+              <!-- paragraphs for the about me section -->
               <p>
                 I studied Electronics Engineering in City College where I was
                 first introduced to programming and electronics, then later
@@ -104,6 +122,7 @@
                 email.
               </p>
               <!-- SOCIAL MEDIA LINKS -->
+              <!-- ordered list of links to my LinkedIn, Github, and email with prepopulated subject field -->
               <ol>
                 <li>
                   <a
@@ -132,17 +151,20 @@
       </div>
     </main>
 
-    <!-- FOOTER -->
+    <!-- FOOTER Section -->
 
     <footer>
+      <!-- Footer wrapper has a vertical list style compared to header -->
       <div class="footer-wrapper">
         <nav>
           <ul>
-            <li><a href="/" class="nav-link">Home</a></li>
+            <!-- unordered list of nav links -->
+            <li><a href="#home" class="nav-link">Home</a></li>
             <li><a href="#about" class="nav-link">About</a></li>
             <li><a href="#contact" class="nav-link">Contact</a></li>
           </ul>
         </nav>
+        <!-- copyright syntax for inserting copyright symbol -->
         <p id="copyright">&copy; Copyright Joseph Vasquez</p>
       </div>
     </footer>
