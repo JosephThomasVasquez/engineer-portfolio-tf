@@ -21,6 +21,7 @@ html {
 body {
   background: rgb(46, 111, 196);
 }
+
 /* Font styles */
 h1,
 h2,
@@ -47,7 +48,7 @@ h3 {
   font-size: 0.9rem;
 }
 
-/* Link styles */
+/* Link styles and pseudo styles with transition for smoother animation */
 a {
   font-weight: 600;
   color: rgb(107, 148, 202);
@@ -76,7 +77,7 @@ hr {
 
 /* HEADER styles ----------------------------------------------------------------- */
 
-/* Brand / Logo */
+/* Brand styling */
 .home h1 {
   z-index: 1;
   margin: 0;
@@ -89,7 +90,7 @@ hr {
   margin-bottom: 0;
 }
 
-/* Nav */
+/* Nav menu */
 nav {
   margin-left: auto;
 }
@@ -119,6 +120,7 @@ div nav li .nav-link {
   border-bottom: 2px solid rgba(255, 174, 0, 0);
 }
 
+/* Underline on hover */
 div nav li a:hover {
   color: #ffffff;
   border-bottom: 2px solid rgb(255, 174, 0);
@@ -126,11 +128,12 @@ div nav li a:hover {
 
 /* MAIN CONTENT Styles ----------------------------------------------------------------- */
 
-/* Photo */
+/* Profile Photo */
 .photo {
   text-align: center;
 }
 
+/* Image dimensions set as a square to convert to a circle via border radius  */
 img {
   width: 200px;
   height: 200px;
@@ -143,12 +146,10 @@ img {
   margin-bottom: 40px;
 }
 
-.email {
-}
-
 /* WRAPPER Styles ----------------------------------------------------------------- */
 
 /* Wrappers to align content and styling consistency */
+/* Separate wrappers to allow a bit more customization separate from each section. */
 .header-wrapper,
 .footer-wrapper,
 .content-wrapper {
@@ -178,7 +179,6 @@ img {
 
 /* FOOTER Styles ----------------------------------------------------------------- */
 
-/* The footer-wrapper keeps footer at the absolute bottom */
 .footer-wrapper {
   position: relative;
   bottom: 0;
@@ -189,6 +189,7 @@ img {
 footer ul {
   list-style: none;
 }
+
 footer nav ul li {
   padding-left: 0;
 }
