@@ -125,6 +125,19 @@ div nav li a:hover {
 }
 
 /* MAIN CONTENT Styles ----------------------------------------------------------------- */
+
+/* Photo */
+.photo {
+  text-align: center;
+}
+
+img {
+  width: 200px;
+  height: 200px;
+  border-radius: 50%;
+}
+
+/* Subtext */
 .sub-text {
   text-align: center;
   margin-bottom: 40px;
