@@ -1,3 +1,14 @@
+/* =================================================================================================
+Index:
+GLOBAL Styles
+HEADER Styles
+MAIN CONTENT Styles
+WRAPPER Styles
+FOOTER Styles
+================================================================================= */
+
+/* GLOBAL styles ----------------------------------------------------------------- */
+
 /* Set border-box for predictable box-sizing */
 html {
   box-sizing: border-box;
@@ -7,14 +18,15 @@ html {
   box-sizing: border-box;
 }
 
-/* Font styling */
+/* Font styles */
 h1,
 h2,
 h3,
 h4,
 h5,
 h6 {
-  font-family: Georgia, "Times New Roman", Times, serif;
+  font-family: "Lucida Sans", "Lucida Sans Regular", "Lucida Grande",
+    "Lucida Sans Unicode", Geneva, Verdana, sans-serif;
 }
 
 p,
@@ -22,44 +34,107 @@ li {
   font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
 }
 
-/* Header & Nav section */
-.home {
-  margin: 0;
-  padding-top: 40px;
+h2,
+h3 {
+  text-align: center;
+  color: rgb(22, 77, 150);
 }
 
-/* List items styling */
-header nav ul {
-  list-style: none;
-  justify-content: space-around;
-  align-items: flex-end;
-}
-
-header nav li {
-  display: inline;
-  float: right;
-}
-
-nav li {
-  margin: 10px;
+h3 {
+  font-size: 0.9rem;
 }
 
 /* Link styles */
-div nav li a {
+a {
+  font-weight: 600;
+  color: rgb(42, 62, 88);
+  text-decoration: none;
+  transition: all 0.5s ease;
+}
+
+a:visited {
+  font-weight: 400;
+  color: rgb(107, 148, 202);
+  font-style: italic;
+}
+
+a:hover {
+  color: rgb(38, 0, 255);
+}
+
+a:active {
+  color: rgb(0, 195, 255);
+}
+
+hr {
+  margin: 80px 0;
+  border: 1px solid rgba(107, 148, 202, 0.5);
+}
+
+/* HEADER styles ----------------------------------------------------------------- */
+
+/* Brand / Logo */
+.home h1 {
+  z-index: 1;
+  margin: 0;
+  line-height: 2rem;
+  text-transform: uppercase;
+}
+
+.home p {
+  z-index: 1;
+  margin-bottom: 0;
+}
+
+/* Nav */
+nav {
+  margin-left: auto;
+}
+/* Nav unordered list styling */
+header nav ul {
+  list-style: none;
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-end;
+}
+
+/* Nav list items */
+header nav li {
+  display: inline;
+}
+
+nav li {
+  margin: 10px 20px;
+  font-weight: bold;
+  text-transform: uppercase;
+}
+
+/* Nav Link styles */
+div nav li .nav-link {
   color: #bfe8ff;
   text-decoration: none;
+  border-bottom: 2px solid rgba(255, 255, 255, 0);
 }
 
 div nav li a:hover {
   color: #ffffff;
+  border-bottom: 2px solid rgba(255, 255, 255, 1);
 }
+
+/* MAIN CONTENT Styles ----------------------------------------------------------------- */
+.sub-text {
+  text-align: center;
+  margin-bottom: 40px;
+}
+
+/* WRAPPER Styles ----------------------------------------------------------------- */
 
 /* Wrappers to align content and styling consistency */
 .header-wrapper,
 .footer-wrapper,
 .content-wrapper {
   margin: auto;
-  padding: 0 40px;
+  padding: 40px 160px;
 }
 
 .header-wrapper,
@@ -67,13 +142,28 @@ div nav li a:hover {
   background: rgb(46, 111, 196);
   color: white;
   text-align: center;
+  box-shadow: 0 0 20px rgba(0, 0, 0, 0.25);
 }
 
 .header-wrapper {
   display: flex;
 }
 
-/* FOOTER Styling */
+.p-wrapper {
+  max-width: 60%;
+  margin: 0 auto;
+}
+
+/* FOOTER Styles ----------------------------------------------------------------- */
+
+/* The footer-wrapper keeps footer at the absolute bottom */
+.footer-wrapper {
+  position: absolute;
+  bottom: 0;
+  width: 100%;
+  height: 200px;
+}
+
 footer ul {
   list-style: none;
 }
