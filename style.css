@@ -130,14 +130,16 @@ div nav li a:hover {
 
 /* Profile Photo */
 .photo {
+  margin-top: 40px;
   text-align: center;
 }
 
 /* Image dimensions set as a square to convert to a circle via border radius  */
 img {
-  width: 200px;
-  height: 200px;
+  width: 400px;
+  height: 400px;
   border-radius: 50%;
+  object-fit: cover;
 }
 
 /* Subtext */
