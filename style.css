@@ -1,8 +1,82 @@
+/* Set border-box for predictable box-sizing */
 html {
-    box-sizing: border-box;
+  box-sizing: border-box;
 }
 
 * {
-    box-sizing: border-box;
+  box-sizing: border-box;
 }
 
+/* Font styling */
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  font-family: Georgia, "Times New Roman", Times, serif;
+}
+
+p,
+li {
+  font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+}
+
+/* Header & Nav section */
+.home {
+  margin: 0;
+  padding-top: 40px;
+}
+
+/* List items styling */
+header nav ul {
+  list-style: none;
+  justify-content: space-around;
+  align-items: flex-end;
+}
+
+header nav li {
+  display: inline;
+  float: right;
+}
+
+nav li {
+  margin: 10px;
+}
+
+/* Link styles */
+div nav li a {
+  color: #bfe8ff;
+  text-decoration: none;
+}
+
+div nav li a:hover {
+  color: #ffffff;
+}
+
+/* Wrappers to align content and styling consistency */
+.header-wrapper,
+.footer-wrapper,
+.content-wrapper {
+  margin: auto;
+  padding: 0 40px;
+}
+
+.header-wrapper,
+.footer-wrapper {
+  background: rgb(46, 111, 196);
+  color: white;
+  text-align: center;
+}
+
+.header-wrapper {
+  display: flex;
+}
+
+/* FOOTER Styling */
+footer ul {
+  list-style: none;
+}
+footer nav ul li {
+  padding-left: 0;
+}
