@@ -19,7 +19,7 @@ html {
 }
 
 body {
-  background: #2e6fc4;
+  background: #225291;
 }
 
 /* Font styles */
@@ -39,19 +39,24 @@ li {
 }
 
 h2,
-h3 {
+h3,
+h4 {
   text-align: center;
   color: rgb(22, 77, 150);
 }
 
+h2 {
+  font-size: 2rem;
+}
+
 h3 {
-  font-size: 0.9rem;
+  font-size: 1.5rem;
 }
 
 /* Link styles and pseudo styles with transition for smoother animation */
 a {
   font-weight: 600;
-  color: #6b94ca;
+  color: #225291;
   text-decoration: none;
   transition: all 0.5s ease;
 }
@@ -115,7 +120,7 @@ nav li {
 
 /* Nav Link styles */
 div nav li .nav-link {
-  color: #bfe8ff;
+  color: #f5f5f5;
   text-decoration: none;
   border-bottom: 2px solid rgba(255, 174, 0, 0);
 }
