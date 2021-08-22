@@ -19,7 +19,7 @@ html {
 }
 
 body {
-  background: rgb(46, 111, 196);
+  background: #2e6fc4;
 }
 
 /* Font styles */
@@ -51,7 +51,7 @@ h3 {
 /* Link styles and pseudo styles with transition for smoother animation */
 a {
   font-weight: 600;
-  color: rgb(107, 148, 202);
+  color: #6b94ca;
   text-decoration: none;
   transition: all 0.5s ease;
 }
